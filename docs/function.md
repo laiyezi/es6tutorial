@@ -333,6 +333,7 @@ function foo(x, y = function() { x = 2; }) {
 }
 
 foo() // 3
+//y()执行之后，内部变量'x'改变，foo() //2
 x // 1
 ```
 
